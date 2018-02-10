@@ -1,0 +1,22 @@
+{
+  "name": "redux-postmessage-middleware",
+  "version": "0.1.0",
+  "description": "A Redux middleware for sending and recieving actions over postmessage",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Christoffer Åhrling",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "yarn run clean",
+    "build": "webpack --config webpack.config.js",
+    "test": "mocha --reporter spec tests/**"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "ts-loader": "^3.5.0",
+    "tslib": "^1.9.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
