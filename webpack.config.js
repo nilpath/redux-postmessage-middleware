@@ -103,7 +103,7 @@ module.exports = {
       include: /\.min\.js$/,
     }),
     new DeclarationBundlerPlugin({
-      moduleName:'redux-postmessage-middleware',
+      moduleName: '\'redux-postmessage-middleware\'',
       out:'./index.d.ts',
     })
   ],
