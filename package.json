@@ -1,16 +1,35 @@
 {
   "name": "redux-postmessage-middleware",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A Redux middleware for sending and recieving actions over postmessage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Christoffer Åhrling",
   "license": "MIT",
+  "keywords": [
+    "redux",
+    "middleware",
+    "postmessage",
+    "redux-postmessage-middleware",
+    "redux-middleware"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilpath/redux-postmessage-middleware.git"
+  },
+  "author": {
+    "name": "Christoffer Ahrling",
+    "email": "christoffer@nilpath.se",
+    "url": "http://nilpath.se"
+  },
+  "bugs": {
+    "url": "https://github.com/nilpath/redux-postmessage-middleware/issues"
+  },
+  "homepage": "https://github.com/nilpath/redux-postmessage-middleware#readme",
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "yarn run clean",
     "build": "webpack --config webpack.config.js",
-    "test": "mocha --reporter spec tests/**"
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",
