@@ -1,6 +1,6 @@
 {
   "name": "redux-postmessage-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Redux middleware for sending and recieving actions over postmessage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
