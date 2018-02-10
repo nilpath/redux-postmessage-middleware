@@ -1,8 +1,8 @@
 {
   "name": "redux-postmessage-middleware",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Redux middleware for sending and recieving actions over postmessage",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "unpkg": "dist/redux-postmessage-middleware.min.js",
