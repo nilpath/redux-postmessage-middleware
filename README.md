@@ -49,10 +49,6 @@ import {
 
 import reducer from './reducers'
 
-// create the saga middleware
-const sagaMiddleware = createSagaMiddleware()
-
-
 // create MessageDispatcherMiddleware for sending actions over postmessage
 const MessageDispatcherMiddleware = createMessageDispatcherMiddleware({
   senderURL: 'http://current.domain',
