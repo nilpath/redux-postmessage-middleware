@@ -23,11 +23,13 @@ export const createMessageDispatcherMiddleware = ({ senderURL, parentURL, target
 
 type MessageRecieverOptions = {
   allowedURLs: string[];
+  allowedTypes?: string[];
 };
 
-export const createMessageRecieverMiddleware = ({ allowedURLs }: MessageRecieverOptions) => {
+export const createMessageRecieverMiddleware = ({ allowedURLs, allowedTypes = [] }: MessageRecieverOptions) => {
   const messageToActionHandler = createMessageToActionHandler({
-    allowedURLs
+    allowedURLs,
+    allowedTypes
   });
 
   return MessageRecieverMiddleware({ messageToActionHandler });
