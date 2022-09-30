@@ -6,11 +6,11 @@ A Redux middleware for sending and recieving actions over postmessage
 ## Install
 
 ```
-$ npm install --save redux-saga
+$ npm install --save redux-postmessage-middleware
 ```
 or
 ```
-$ yarn add redux-saga
+$ yarn add redux-postmessage-middleware
 ```
 
 ## Usage Example
@@ -48,9 +48,6 @@ import {
 } from 'redux-postmessage-middleware';
 
 import reducer from './reducers'
-
-// create the saga middleware
-const sagaMiddleware = createSagaMiddleware()
 
 
 // create MessageDispatcherMiddleware for sending actions over postmessage
